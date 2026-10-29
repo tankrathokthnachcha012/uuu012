@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิทยาลัยเทคนิคนางรอง</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏫 วิทยาลัยเทคนิคนางรอง</h1>
+    <p>NANGRONG TECHNICAL COLLEGE</p>
+</header>
+
+<nav>
+    <button onclick="showPage('home')">หน้าหลัก</button>
+    <button onclick="showPage('about')">เกี่ยวกับวิทยาลัย</button>
+    <button onclick="showPage('departments')">แผนกวิชา</button>
+    <button onclick="showPage('admission')">สมัครเรียน</button>
+    <button onclick="showPage('news')">ข่าวสาร</button>
+    <button onclick="showPage('contact')">ติดต่อเรา</button>
+</nav>
+
+<main>
+
+    <section id="home" class="page active">
+        <div class="hero">
+            <h2>ยินดีต้อนรับสู่เว็บไซต์วิทยาลัย</h2>
+            <p>เรียนรู้ทักษะวิชาชีพ พัฒนาความสามารถ
+            สร้างอนาคตที่ดีไปด้วยกัน</p>
+            <button onclick="showPage('departments')">
+                สำรวจแผนกวิชา →
+            </button>
+        </div>
+
+        <h2>บริการสำหรับนักเรียน นักศึกษา</h2>
+        <div class="cards">
+            <div class="card" onclick="showPage('departments')">
+                <h3>📚 แผนกวิชา</h3>
+                <p>สำรวจสาขาวิชาที่สนใจ</p>
+            </div>
+            <div class="card" onclick="showPage('admission')">
+                <h3>📝 สมัครเรียน</h3>
+                <p>ดูข้อมูลการสมัครเข้าเรียน</p>
+            </div>
+            <div class="card" onclick="showPage('news')">
+                <h3>📢 ข่าวสาร</h3>
+                <p>ติดตามประกาศและกิจกรรม</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="page">
+        <h2>เกี่ยวกับวิทยาลัย</h2>
+        <div class="card">
+            <h3>ประวัติและข้อมูลทั่วไป</h3>
+            <p>วิทยาลัยเทคนิคนางรอง เป็นสถานศึกษาด้าน
+            อาชีวศึกษา ตั้งอยู่ในอำเภอนางรอง จังหวัดบุรีรัมย์</p>
+            <p>มุ่งเน้นการจัดการเรียนการสอนด้านวิชาชีพ
+            เพื่อพัฒนาความรู้ ทักษะ และเตรียมความพร้อม
+            สำหรับการประกอบอาชีพ</p>
+        </div>
+        <div class="card">
+            <h3>ระดับการศึกษา</h3>
+            <p>• ประกาศนียบัตรวิชาชีพ (ปวช.)</p>
+            <p>• ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</p>
+        </div>
+        <button onclick="openOfficial()">เว็บไซต์ทางการ</button>
+    </section>
+
+    <section id="departments" class="page">
+        <h2>แผนกวิชาและสาขาที่สนใจ</h2>
+        <p>เลือกแผนกเพื่ออ่านรายละเอียดเบื้องต้น</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🔧 ช่างยนต์</h3>
+                <p>ศึกษาเครื่องยนต์ ระบบรถยนต์
+                การตรวจสอบและบำรุงรักษายานยนต์</p>
+            </div>
+            <div class="card">
+                <h3>⚙️ ช่างกลโรงงาน</h3>
+                <p>เรียนรู้เครื่องมือกล งานผลิต
+                และกระบวนการทางอุตสาหกรรม</p>
+            </div>
+            <div class="card">
+                <h3>⚡ ไฟฟ้ากำลัง</h3>
+                <p>ศึกษาไฟฟ้า การติดตั้งระบบไฟฟ้า
+                และการบำรุงรักษา</p>
+            </div>
+            <div class="card">
+                <h3>🔌 ช่างอิเล็กทรอนิกส์</h3>
+                <p>เรียนรู้วงจรอิเล็กทรอนิกส์
+                และการตรวจสอบอุปกรณ์</p>
+            </div>
+            <div class="card">
+                <h3>🏗️ โยธา</h3>
+                <p>ศึกษาพื้นฐานงานก่อสร้าง
+                การเขียนแบบ และงานสำรวจ</p>
+            </div>
+            <div class="card">
+                <h3>💻 คอมพิวเตอร์</h3>
+                <p>เรียนรู้คอมพิวเตอร์ โปรแกรม
+                การพัฒนาเว็บไซต์ และเทคโนโลยีดิจิทัล</p>
+            </div>
+            <div class="card">
+                <h3>📊 การบัญชี</h3>
+                <p>เรียนรู้บัญชี การบันทึกรายการ
+                และเอกสารทางการเงิน</p>
+            </div>
+            <div class="card">
+                <h3>📈 การตลาด</h3>
+                <p>ศึกษาการขาย การประชาสัมพันธ์
+                และการตลาดดิจิทัล</p>
+            </div>
+            <div class="card">
+                <h3>🏨 การโรงแรม</h3>
+                <p>เรียนรู้การบริการ การต้อนรับ
+                และการจัดการงานโรงแรม</p>
+            </div>
+            <div class="card">
+                <h3>🔩 ช่างเชื่อมโลหะ</h3>
+                <p>ศึกษางานเชื่อมและการผลิตชิ้นงานโลหะ</p>
+            </div>
+            <div class="card">
+                <h3>📖 สามัญสัมพันธ์</h3>
+                <p>เรียนวิชาพื้นฐานที่สนับสนุน
+                การเรียนในสายอาชีพ</p>
+            </div>
+            <div class="card">
+                <h3>🛠️ เทคนิคพื้นฐาน</h3>
+                <p>ศึกษาทักษะพื้นฐานทางช่าง
+                และการใช้เครื่องมืออย่างเหมาะสม</p>
+            </div>
+        </div>
+        <p class="note">หมายเหตุ: รายชื่อและระดับหลักสูตรที่เปิดรับจริง
+        ให้ตรวจสอบจากประกาศของวิทยาลัย</p>
+        <button onclick="openOfficial()">ตรวจสอบข้อมูลแผนกทางการ</button>
+    </section>
+
+    <section id="admission" class="page">
+        <h2>ข้อมูลการสมัครเรียน</h2>
+        <div class="card">
+            <h3>หลักสูตรที่ควรตรวจสอบ</h3>
+            <p>🎓 ปวช. — สำหรับผู้สมัครตามคุณสมบัติที่ประกาศกำหนด</p>
+            <p>🎓 ปวส. — สำหรับผู้สมัครที่มีวุฒิตามเงื่อนไขของหลักสูตร</p>
+            <p>ตรวจสอบคุณสมบัติ เอกสาร วันสมัคร และสาขาที่เปิดรับ
+            จากประกาศในแต่ละปีการศึกษา</p>
+            <button onclick="openAdmission()">ไปหน้าสมัครเรียนออนไลน์</button>
+        </div>
+    </section>
+
+    <section id="news" class="page">
+        <h2>ข่าวสารและประชาสัมพันธ์</h2>
+        <div class="card">
+            <h3>📣 ข่าวจากวิทยาลัย</h3>
+            <p>ดูประกาศรับสมัคร ข่าวกิจกรรม
+            และกำหนดการต่าง ๆ จากเว็บไซต์ทางการ</p>
+            <button onclick="openNews()">อ่านข่าวล่าสุด</button>
+        </div>
+        <div class="card">
+            <h3>📅 กิจกรรมและประกาศ</h3>
+            <p>ติดตามกำหนดการและข้อมูลที่เกี่ยวข้อง
+            กับนักเรียนและนักศึกษา</p>
+            <button onclick="openOfficial()">ดูเว็บไซต์วิทยาลัย</button>
+        </div>
+    </section>
+
+    <section id="contact" class="page">
+        <h2>ติดต่อวิทยาลัย</h2>
+        <div class="card">
+            <h3>📍 ที่ตั้ง</h3>
+            <p>วิทยาลัยเทคนิคนางรอง</p>
+            <p>เลขที่ 1 หมู่ 1 ถนนบ้านเก่า-แพงพวย</p>
+            <p>ตำบลนางรอง อำเภอนางรอง</p>
+            <p>จังหวัดบุรีรัมย์ 31110</p>
+            <h3>☎️ โทรศัพท์</h3>
+            <p>044-631-556</p>
+            <button onclick="openMap()">เปิดแผนที่ Google Maps</button>
+            <button onclick="openOfficial()">เว็บไซต์ทางการ</button>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>วิทยาลัยเทคนิคนางรอง | NANGRONG TECHNICAL COLLEGE</p>
+    <p>เว็บไซต์ตัวอย่างเพื่อการศึกษา</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
